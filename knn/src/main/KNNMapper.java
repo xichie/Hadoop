@@ -18,7 +18,7 @@ import util.Distance;
  * map阶段的输入为训练集文本文件格式为：	1.0 2.0 3.0 1		最后一列为类别标签
 							1.0 2.1 3.1 1
 							
-	输出为：(训练样例， DistanceAndLabel)		DistanceAndLabel包含了距离和类别
+	输出为：(测试样例， DistanceAndLabel)		DistanceAndLabel包含了距离和类别
  */
 public class KNNMapper extends Mapper<LongWritable, Text, Instance, DistanceAndLabel> {
 
